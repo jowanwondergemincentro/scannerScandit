@@ -1,0 +1,44 @@
+{
+  "name": "scannerscandit",
+  "widgetName": "ScannerScandit",
+  "version": "1.0.0",
+  "description": "My widget description",
+  "copyright": "Incentro",
+  "author": "Jowan Wondergem",
+  "config": {
+    "projectPath": "../..//"
+  },
+  "packagePath": "incentro",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "pluggable-widgets-tools build:native",
+    "dev": "pluggable-widgets-tools start:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "test": "pluggable-widgets-tools test:unit:native --no-cache --ci",
+    "test:unit": "pluggable-widgets-tools test:unit:native --coverage",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "jest-junit": {
+    "output": "./dist/testresults/TESTS-Jest.xml"
+  },
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/Jowan Wondergem/scannerscandit/issues"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.14.0",
+    "@types/big.js": "^4.0.5",
+    "@types/enzyme": "^3.1.14",
+    "@types/jest": "^24.0.0",
+    "@types/react": "~16.9.0",
+    "@types/react-native": "~0.61.23",
+    "scandit-react-native-datacapture-barcode": "^6.6.3",
+    "scandit-react-native-datacapture-core": "^6.8.0-beta.1.snapshot"
+  },
+  "dependencies": {
+    "scandit-react-native-datacapture-barcode": "^6.6.3",
+    "scandit-react-native-datacapture-core": "^6.6.3"
+  }
+}

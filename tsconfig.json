@@ -1,0 +1,13 @@
+{
+  "extends": "./node_modules/@mendix/pluggable-widgets-tools/configs/tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "noImplicitAny": false,
+    "noImplicitAny": false,
+    "lib": [ "ES2015" ],
+    "typeRoots": [
+      "./node_modules/scandit-react-native-datacapture-barcode",
+      "./node_modules/scandit-react-native-datacapture-core"
+    ]
+  }
+}
